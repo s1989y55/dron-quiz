@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二等無人航空機操縦士 学科試験 模擬試験ランダムスタート</title>
+    <meta name="description" content="二等無人航空機操縦士の学科試験対策向け模擬問題（全4パターン）をランダムに開始します。">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+            color: #333;
+            background-color: #f0f0f5;
+            text-align: center; /* 中央寄せ */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* 画面全体を中央に配置 */
+        }
+        h1 {
+            color: #00796b;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .start-button {
+            padding: 15px 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #e65100; /* オレンジ系 */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .start-button:hover {
+            background-color: #ff8f00; /* ホバーで明るく */
+            transform: translateY(-2px);
+        }
+        .start-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .info {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>二等無人航空機操縦士 学科試験対策</h1>
+    <p>全4パターン（合計200問）の中から、ランダムに1つの模擬試験を開始します。</p>
+
+    <button class="start-button" onclick="startRandomQuiz()">
+        🚀 試験開始！
+    </button>
+
+    <div class="info">
+        <p>（このファイルは `quiz_1.html`, `quiz_2.html`, `quiz_3.html`, `quiz_4.html` と同じフォルダに配置してください）</p>
+    </div>
+
+    <script>
+        function startRandomQuiz() {
+            // 作成済みの全てのクイズファイル名をリスト化
+            const quizFiles = ['quiz_1.html', 'quiz_2.html', 'quiz_3.html', 'quiz_4.html'];
+            
+            // 0から (リストの長さ-1) までの乱数を生成（0, 1, 2, 3のいずれか）
+            const randomIndex = Math.floor(Math.random() * quizFiles.length);
+            
+            // リストからランダムにファイルを選択
+            const selectedFile = quizFiles[randomIndex];
+            
+            // 選択されたファイルへブラウザをリダイレクト（ページ遷移）
+            window.location.href = selectedFile;
+        }
+    </script>
+</body>
+</html>

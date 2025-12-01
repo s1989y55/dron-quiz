@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二等無人航空機操縦士 学科試験 模擬問題（パターン4）</title>
+    <meta name="description" content="二等無人航空機操縦士の学科試験対策向け模擬問題（50問・3択形式）。">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+            color: #333;
+            background-color: #f0f0f5;
+        }
+        h1 {
+            color: #00796b;
+            text-align: center;
+            border-bottom: 4px solid #00796b;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+        .quiz-container {
+            padding: 10px;
+        }
+        .question-block {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #c8e6c9;
+            border-left: 6px solid #388e3c;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            font-size: 1.15em;
+            color: #388e3c;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .options {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 15px;
+        }
+        .options li {
+            background: #f9f9f9;
+            margin-bottom: 6px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            /* 選択肢をアクティブにするためのスタイル */
+            cursor: pointer; /* マウスオーバー時に指のアイコンを表示 */
+            transition: background-color 0.2s;
+        }
+        .options li:hover {
+            background-color: #e0f2f1; /* ホバー時の色 */
+        }
+        /* 解答ブロックの初期状態は非表示 */
+        .answer-content {
+            display: none;
+            padding: 15px;
+            background-color: #fff3e0;
+            border-radius: 4px;
+            margin-top: 10px;
+            border: 1px solid #ffcc80;
+            animation: fadeIn 0.5s;
+        }
+        /* 表示された解答ブロックのスタイル */
+        .answer-content.show {
+            display: block;
+        }
+        .correct-answer {
+            color: #e65100;
+            font-weight: bold;
+        }
+        .rationale {
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+        .hint {
+            color: #004d40;
+            font-style: italic;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>二等無人航空機操縦士 学科試験 模擬問題（パターン4）</h1>
+
+    <div class="quiz-container">
+
+        <div class="question-block" id="q1">
+            <h2>Q.1. 無人航空機の登録制度における「登録の有効期間」として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q1" data-answer="A">A. 登録の有効期間は、登録を行った日から**3年間**である。</li>
+                <li data-question="q1" data-answer="B">B. 登録に有効期間はなく、一度登録すれば生涯有効である。</li>
+                <li data-question="q1" data-answer="C. 登録の有効期間は、無人航空機操縦士技能証明に合わせて5年間である。</li>
+            </ul>
+            <div class="answer-content" id="answer-q1">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】無人航空機（100g以上）の登録の有効期間は**3年間**です。有効期間満了前に更新手続きを行う必要があります。</p>
+                    <p class="hint">【ヒント】技能証明の有効期間も3年間です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q2">
+            <h2>Q.2. 特定飛行（カテゴリーⅡ飛行）のうち、**目視外飛行**を行う際に、必須の安全措置として定められているものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q2" data-answer="A">A. 機体から50m以内の場所に、飛行状況及び周囲を監視できる**補助者**を配置すること。</li>
+                <li data-question="q2" data-answer="B">B. 飛行前に必ず2時間以上の座学講習を完了すること。</li>
+                <li data-question="q2" data-answer="C. 飛行経路を地上にマーキングすること。</li>
+            </ul>
+            <div class="answer-content" id="answer-q2">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】目視外飛行を行う場合、原則として、**補助者の配置**、またはそれに代わる**機上カメラ等による常時監視**などの措置が必要です。</p>
+                    <p class="hint">【ヒント】目視外飛行は、第三者の目による監視が必要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q3">
+            <h2>Q.3. **夜間飛行**を行う際に、無人航空機に求められる要件として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q3" data-answer="A">A. 機体の向き及び状態を把握できる**灯火**を有すること。</li>
+                <li data-question="q3" data-answer="B">B. 夜間は機体の色を白色に変えること。</li>
+                <li data-question="q3" data-answer="C. 500g未満の機体であれば灯火は不要である。</li>
+            </ul>
+            <div class="answer-content" id="answer-q3">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】夜間飛行は、**目視での監視**が困難になるため、機体の**姿勢や状態を把握できる灯火**を装備することが必要です。</p>
+                    <p class="hint">【ヒント】夜間の視認性が重要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q4">
+            <h2>Q.4. 航空法における**飛行禁止空域**として、最も優先度の高い規制が適用されるものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q4" data-answer="A">A. 国土交通大臣が指定した**重要施設**（国会議事堂、内閣総理大臣官邸など）の周辺空域。</li>
+                <li data-question="q4" data-answer="B">B. 人口集中地区（DID）の上空。</li>
+                <li data-question="q4" data-answer="C. 地表または水面から150m以上の空域。</li>
+            </ul>
+            <div class="answer-content" id="answer-q4">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】重要施設の周辺は、「**小型無人機等飛行禁止法**」により、航空法上の規制に加えて**より厳しい規制**が課せられています。</p>
+                    <p class="hint">【ヒント】重要施設はテロ対策などの観点から厳しく規制されています。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q5">
+            <h2>Q.5. 飲酒後の無人航空機の操縦に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q5" data-answer="A">A. アルコールの影響により正常な飛行ができないおそれがある状態での飛行は**一切禁止**されている。</li>
+                <li data-question="q5" data-answer="B">B. 飲酒後8時間経過していれば飛行は可能である。</li>
+                <li data-question="q5" data-answer="C. 飛行高度が30m未満であれば、飲酒後の飛行も可能である。</li>
+            </ul>
+            <div class="answer-content" id="answer-q5">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飲酒運転と同様に、無人航空機の操縦も**アルコールの影響下**にある場合は**厳しく禁止**されています。</p>
+                    <p class="hint">【ヒント】飲酒後の飛行は重い罰則の対象です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q6">
+            <h2>Q.6. 飛行計画を国土交通大臣へ**通報**する時期として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q6" data-answer="A">A. 飛行の**開始前**までに、DIPSまたはFAX等を通じて通報しなければならない。</li>
+                <li data-question="q6" data-answer="B">B. 飛行終了後7日以内に通報すればよい。</li>
+                <li data-question="q6" data-answer="C. 許可・承認を得た場合は、通報の必要はない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q6">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飛行計画の通報は、他の航空機との空域調整や緊急時の対応のために、**飛行開始前**に行う必要があります。</p>
+                    <p class="hint">【ヒント】飛行計画は事前に共有することが重要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q7">
+            <h2>Q.7. **100g未満**の模型航空機に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q7" data-answer="A">A. 航空法上の**特定飛行の規制は適用されない**が、**小型無人機等禁止法**などの他の法令は適用される場合がある。</li>
+                <li data-question="q7" data-answer="B">B. 100g未満の機体は、いかなる場所でも自由に飛行できる。</li>
+                <li data-question="q7" data-answer="C. 100g未満の機体は、必ず登録しなければならない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q7">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】100g未満の機体は**航空法の無人航空機**の定義から外れますが、**小型無人機等禁止法**や**都道府県の条例**など、他の規制が適用される可能性があります。</p>
+                    <p class="hint">【ヒント】航空法以外の法律にも注意が必要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8">
+            <h2>Q.8. 無人航空機操縦士技能証明の**更新講習**を受けることができる期間として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q8" data-answer="A">A. 技能証明の有効期間満了日の**2ヶ月前**から満了日までの間。</li>
+                <li data-question="q8" data-answer="B">B. 技能証明が失効してから3ヶ月以内。</li>
+                <li data-question="q8" data-answer="C. 技能証明の取得日から1年以内。</li>
+            </ul>
+            <div class="answer-content" id="answer-q8">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】技能証明の更新手続きは、**有効期間満了日の2ヶ月前**から行うことができます。</p>
+                    <p class="hint">【ヒント】余裕をもって手続きを行いましょう。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q9">
+            <h2>Q.9. 航空法における**特定飛行の規制から除外される**飛行として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q9" data-answer="A">A. **屋内や完全にネットで囲われた区域内**で行う飛行。</li>
+                <li data-question="q9" data-answer="B">B. 地表から100mの高さで、目視外で行う飛行。</li>
+                <li data-question="q9" data-answer="C. 係留索を用いずに、人や物件から25mの距離を保って行う飛行。</li>
+            </ul>
+            <div class="answer-content" id="answer-q9">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】特定飛行の規制は「**空域**」での飛行に適用されるため、**建物内や完全に囲まれた空間内**での飛行は対象外です。</p>
+                    <p class="hint">【ヒント】「空域」の定義を再確認しましょう。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q10">
+            <h2>Q.10. 国土交通大臣に特定飛行の**許可・承認**を申請する際に、必ず記載しなければならない事項として、誤っているものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q10" data-answer="A">A. 飛行エリアの過去5年間の**平均湿度**。</li>
+                <li data-question="q10" data-answer="B. 飛行の目的、日時、場所（緯度経度、範囲）。</li>
+                <li data-question="q10" data-answer="C. 使用する無人航空機の機体情報および操縦者の技能証明情報。</li>
+            </ul>
+            <div class="answer-content" id="answer-q10">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】申請書には、飛行の**安全性**を審査するために必要な、**具体的な計画や機体・操縦者の情報**を記載しますが、過去の平均湿度は必須ではありません。</p>
+                    <p class="hint">【ヒント】審査に必要なのは現在の情報や計画です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q11">
+            <h2>Q.11. 許可・承認が必要な特定飛行である「**物件投下**」の行為の例として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q11" data-answer="A">A. **農薬や種子**を空中から散布する行為。</li>
+                <li data-question="q11" data-answer="B">B. 機体に搭載されたカメラで写真を撮影する行為。</li>
+                <li data-question="q11" data-answer="C. 着陸時に機体を地表に接触させる行為。</li>
+            </ul>
+            <div class="answer-content" id="answer-q11">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】物件投下とは、機体から意図的に物件を分離させる行為を指し、**農薬散布**などがこれに該当し、特定飛行として許可・承認が必要です。</p>
+                    <p class="hint">【ヒント】投下したものが第三者に危害を加えるリスクを伴います。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q12">
+            <h2>Q.12. **飛行日誌**を記載する義務があるのは、航空法上、**誰**に対してか。</h2>
+            <ul class="options">
+                <li data-question="q12" data-answer="A">A. 無人航空機を**飛行させる者（操縦者）**。</li>
+                <li data-question="q12" data-answer="B">B. 機体の製造者。</li>
+                <li data-question="q12" data-answer="C. 国土交通大臣。</li>
+            </ul>
+            <div class="answer-content" id="answer-q12">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飛行日誌の作成・記載は、**安全な運航を確保する責任**を持つ**操縦者**に義務付けられています。</p>
+                    <p class="hint">【ヒント】飛行日誌は安全管理の記録です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q13">
+            <h2>Q.13. **無人航空機登録制度**の最も主要な目的として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q13" data-answer="A">A. 事故発生時の**所有者特定**や**機体の所有者責任**を明確化するため。</li>
+                <li data-question="q13" data-answer="B">B. 機体のデザインを統一するため。</li>
+                <li data-question="q13" data-answer="C. 操縦者の過去の飛行時間を把握するため。</li>
+            </ul>
+            <div class="answer-content" id="answer-q13">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】登録制度は、機体の**所有者**や**使用者**を明確にすることで、事故や法令違反時の責任追及を可能にし、安全意識の向上を目的としています。</p>
+                    <p class="hint">【ヒント】自動車のナンバープレートと同じ役割です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q14">
+            <h2>Q.14. **カテゴリーⅢ飛行**（第三者の立入管理措置を講じない特定飛行）に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q14" data-answer="A">A. 特定飛行に該当し、立入管理措置を講じても講じなくても、**国土交通大臣の許可・承認が必要**である。</li>
+                <li data-question="q14" data-answer="B">B. 許可・承認は不要であるが、飛行計画の通報が必要である。</li>
+                <li data-question="q14" data-answer="C. 技能証明を持っていれば、自由に飛行できる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q14">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】カテゴリーⅢ飛行は、**第三者の上空**を飛行する行為であり、**一等無人航空機操縦士**の技能証明と**機体認証**を得た上で、**個別の許可・承認**（審査）が必要です。</p>
+                    <p class="hint">【ヒント】レベル4飛行（有人地帯での目視外飛行）もカテゴリーⅢに該当します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q15">
+            <h2>Q.15. 事故報告の義務のうち、**第三者への負傷**があった場合の、国土交通大臣への報告期限として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q15" data-answer="A">A. 事故発生後**10日以内**に報告しなければならない。</li>
+                <li data-question="q15" data-answer="B">B. 事故発生後30日以内であればよい。</li>
+                <li data-question="q15" data-answer="C. 負傷者がいる場合は、報告義務はない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q15">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】人身事故、物件損害、機体の大破などが発生した場合、**事故発生後10日以内**に国土交通大臣へ報告しなければなりません。</p>
+                    <p class="hint">【ヒント】報告期限は10日です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q16">
+            <h2>Q.16. マルチコプターの**ヨー（Yaw）**軸（機首の向き）制御に使用される原理として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q16" data-answer="A">A. 対角線上のローターペアの**回転速度の差**を利用して、発生する反トルクの合計を制御する。</li>
+                <li data-question="q16" data-answer="B">B. 機体に装着された専用の方向舵を使用する。</li>
+                <li data-question="q16" data-answer="C. 機体を左右に傾ける（ロール）ことで方向転換する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q16">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】ヨー制御は、**時計回り（CW）**と**反時計回り（CCW）**のモーターの回転速度のバランスを崩すことで生じる**反トルク**を利用して行います。</p>
+                    <p class="hint">【ヒント】モーターのトルクの反作用を利用します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q17">
+            <h2>Q.17. **LiPoバッテリー**の安全な保管温度として、最も推奨されるものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q17" data-answer="A">A. **常温（15〜25°C程度）**、直射日光や高温を避ける場所。</li>
+                <li data-question="q17" data-answer="B">B. 常に5°C以下の冷蔵庫内。</li>
+                <li data-question="q17" data-answer="C. 50°C以上の高温の場所。</li>
+            </ul>
+            <div class="answer-content" id="answer-q17">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】LiPoバッテリーは**熱**に弱く、高温下では**劣化が促進**され、**発火の危険性**が高まるため、常温で保管する必要があります。</p>
+                    <p class="hint">【ヒント】車内など高温になる場所での放置は厳禁です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q18">
+            <h2>Q.18. **プロペラの欠けやひび割れ**などの損傷が飛行に与える影響として、最も大きいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q18" data-answer="A">A. 機体の**激しい振動**と**揚力バランスの低下**を引き起こし、制御不能・墜落の危険性が高まる。</li>
+                <li data-question="q18" data-answer="B">B. 飛行時間がわずかに長くなる。</li>
+                <li data-question="q18" data-answer="C. 機体の機首が自動的に上を向く。</li>
+            </ul>
+            <div class="answer-content" id="answer-q18">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】プロペラの損傷は、**重心のズレ**と**空気抵抗の不均等**を生じさせ、機体に激しい振動と制御の不安定化をもたらします。</p>
+                    <p class="hint">【ヒント】飛行前には必ずプロペラの点検をしましょう。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q19">
+            <h2>Q.19. GNSS（全地球衛星測位システム）が提供する情報で、機体の**高度**を測定する精度に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q19" data-answer="A">A. 垂直方向の精度（高度）は、水平方向の精度（位置）よりも**劣る**傾向がある。</li>
+                <li data-question="q19" data-answer="B">B. 垂直方向の精度は、水平方向の精度よりも常に優れている。</li>
+                <li data-question="q19" data-answer="C. GNSSでは高度を測定できない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q19">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】GNSS衛星の配置上、**水平方向**に比べて**垂直方向**の誤差が大きくなる傾向があるため、ドローンは通常、気圧センサーなどで高度を補正しています。</p>
+                    <p class="hint">【ヒント】高層ビル群での飛行では誤差がさらに大きくなります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q20">
+            <h2>Q.20. **フェールセーフ機能**の設定で、操縦者が最も重要視すべき事項を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q20" data-answer="A">A. ロストリンク発生時の**自動帰還地点（ホームポイント）**を正確に記録・設定すること。</li>
+                <li data-question="q20" data-answer="B">B. フェールセーフ作動時の機体の色。</li>
+                <li data-question="q20" data-answer="C. 緊急停止機能を作動させないように設定すること。</li>
+            </ul>
+            <div class="answer-content" id="answer-q20">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】フェールセーフ機能が作動した際、機体が**どこへ、どのように帰ってくるか**を正確に設定しておくことが、第三者への危害を避けるために極めて重要です。</p>
+                    <p class="hint">【ヒント】ホームポイントのGPS精度は常に確認が必要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q21">
+            <h2>Q.21. 無人航空機に広く使用されている**ブラシレスモーター**の特性として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q21" data-answer="A">A. 効率が高く、長寿命で、無人航空機に広く使用されている。</li>
+                <li data-question="q21" data-answer="B">B. ブラシがあるため、定期的なブラシの交換が必要である。</li>
+                <li data-question="q21" data-answer="C. 構造が単純なため、出力は低い。</li>
+            </ul>
+            <div class="answer-content" id="answer-q21">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】ブラシレスモーターは、ブラシがなく、**エネルギー効率が高い**ため、バッテリーで飛行するドローンに最適です。</p>
+                    <p class="hint">【ヒント】高効率・高出力が特徴です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q22">
+            <h2>Q.22. 機体認証制度における「**機体認証**」の目的として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q22" data-answer="A">A. 製造された**個別の機体**が安全基準及び均一性基準に適合していることを確認する。</li>
+                <li data-question="q22" data-answer="B">B. 操縦者の過去の職務経歴を確認する。</li>
+                <li data-question="q22" data-answer="C. 機体の設計図が他のメーカーと類似していないことを確認する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q22">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】機体認証は、製造された**一機ごとの機体**が、型式認証で確認された設計通りに製造され、安全基準を満たしていることを証明します。</p>
+                    <p class="hint">【ヒント】「型式」が設計図の認証、「機体」が実機（個体）の認証です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q23">
+            <h2>Q.23. **ペイロード**（搭載物）が重くなった場合の、マルチコプターの飛行への影響として正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q23" data-answer="A">A. ホバリングに必要な**モーター出力が増加**し、結果として**飛行時間が短縮**する。</li>
+                <li data-question="q23" data-answer="B">B. 機体重量が重くなることで、飛行時間が長くなる。</li>
+                <li data-question="q23" data-answer="C. 飛行への影響は特にない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q23">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】重量が増すと、より大きな揚力を発生させる必要があり、モーターがより多くの電力を消費するため、飛行時間が短くなります。</p>
+                    <p class="hint">【ヒント】機体が重くなるほど燃費が悪くなります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q24">
+            <h2>Q.24. **IMU（慣性計測装置）のキャリブレーション**を行う主な理由として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q24" data-answer="A">A. 機体の**センサー（加速度・ジャイロ）の精度**を向上させ、安定した飛行を確保するため。</li>
+                <li data-question="q24" data-answer="B">B. バッテリーの充電時間を短縮するため。</li>
+                <li data-question="q24" data-answer="C. 機体の登録情報を変更するため。</li>
+            </ul>
+            <div class="answer-content" id="answer-q24">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】IMUは機体の姿勢制御に不可欠なため、**温度変化や振動**によるセンサーの誤差を補正する**キャリブレーション**が重要です。</p>
+                    <p class="hint">【ヒント】IMUは機体の安定性の基盤です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q25">
+            <h2>Q.25. 機体の**電波障害（EMI: ElectroMagnetic Interference）**の原因として、最も可能性が高いものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q25" data-answer="A">A. 高圧送電線、無線送信所、**機体内部の電源ケーブル**などからの強い電磁波。</li>
+                <li data-question="q25" data-answer="B">B. 気圧の変化。</li>
+                <li data-question="q25" data-answer="C. 飛行高度が30m未満であること。</li>
+            </ul>
+            <div class="answer-content" id="answer-q25">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】電波障害は、**外部**の送電線などからの強い電磁波や、**機体内部**の電源ケーブルからのノイズによって、コンパスやGPSなどのセンサーが誤作動する現象です。</p>
+                    <p class="hint">【ヒント】特に高圧線周辺は危険です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q26">
+            <h2>Q.26. **海風**と**陸風**に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q26" data-answer="A">A. 日中は陸地が温まり**海風**が吹き、夜間は陸地が冷え**陸風**が吹く。</li>
+                <li data-question="q26" data-answer="B">B. 昼夜を問わず、常に海風が吹いている。</li>
+                <li data-question="q26" data-answer="C. 海風は乱気流を引き起こさない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q26">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】海陸の**温度差**によって生じる風であり、**日中**は**海→陸（海風）**、**夜間**は**陸→海（陸風）**の対流が発生します。</p>
+                    <p class="hint">【ヒント】温まりやすい陸地と冷えにくい水面との違いを理解しましょう。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q27">
+            <h2>Q.27. **霧**が飛行に与える影響で、最も危険性の高いものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q27" data-answer="A">A. **視程（見通し）**が大幅に低下し、**目視内飛行の維持**が困難になる。</li>
+                <li data-question="q27" data-answer="B">B. 霧が機体の重量を大幅に増加させる。</li>
+                <li data-question="q27" data-answer="C. 霧は風速を常にゼロにする。</li>
+            </ul>
+            <div class="answer-content" id="answer-q27">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】霧は小さな水滴の集まりであり、**視程不良**による目視内飛行の困難さや、機体の**水濡れ**による電子機器の故障リスクがあります。</p>
+                    <p class="hint">【ヒント】視程不良は、パイロットにとって最も危険な状況の一つです。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q28">
+            <h2>Q.28. **露点温度**に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q28" data-answer="A">A. 空気中の**水蒸気が凝結**して霧や露が発生し始める温度。</li>
+                <li data-question="q28" data-answer="B">B. 大気中の最も高い気温。</li>
+                <li data-question="q28" data-answer="C. 地表付近の風速が最も強くなる温度。</li>
+            </ul>
+            <div class="answer-content" id="answer-q28">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】露点温度は、空気が冷やされて**飽和**し、水蒸気が水滴に変わる温度であり、**霧や雲の発生**予測に利用されます。</p>
+                    <p class="hint">【ヒント】露点温度と気温が近くなると、霧が発生しやすくなります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q29">
+            <h2>Q.29. **高高度**での飛行を計画する際に、特に考慮すべき気象リスクとして、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q29" data-answer="A">A. 空気密度が低くなり**揚力が低下**する、また**風速が地上より強い**傾向がある。</li>
+                <li data-question="q29" data-answer="B">B. 高高度では風は発生しない。</li>
+                <li data-question="q29" data-answer="C. 高度が高くなるほど、機体のバッテリーは性能が向上する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q29">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】高高度では、空気が薄くなるため**揚力が減少**し、また**地表の摩擦抵抗**がなくなるため、**風速が地上より強く**なります。</p>
+                    <p class="hint">【ヒント】高空では、より多くのパワーが必要になります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q30">
+            <h2>Q.30. 突発的な強い下降気流である**ダウンバースト**が発生しやすい雲として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q30" data-answer="A">A. **積乱雲**（雷雲）。</li>
+                <li data-question="q30" data-answer="B. 巻雲。</li>
+                <li data-question="q30" data-answer="C. 筋雲。</li>
+            </ul>
+            <div class="answer-content" id="answer-q30">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】ダウンバーストは、**積乱雲の成熟期**に発生する激しい**下降気流**が地表に衝突し、水平方向に広がる現象で、墜落の危険性が極めて高いです。</p>
+                    <p class="hint">【ヒント】積乱雲は、あらゆる危険な気象現象の元となります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q31">
+            <h2>Q.31. **気温が高すぎる**状況での飛行に関する注意点として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q31" data-answer="A">A. モーターやバッテリーが**オーバーヒート**する危険性がある。</li>
+                <li data-question="q31" data-answer="B. 揚力が大幅に向上するため、飛行が容易になる。</li>
+                <li data-question="q31" data-answer="C. 電波の到達距離が延びる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q31">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】高温は、電子機器の**誤動作**や**バッテリーの劣化・発火**、また空気密度が低下することによる**揚力不足**など、多くのリスクを高めます。</p>
+                    <p class="hint">【ヒント】電子機器は熱に弱いです。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q32">
+            <h2>Q.32. **地表付近の風速**が、日中と夜間で異なる主な理由として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q32" data-answer="A">A. 日中は**熱対流**や**地形による風の乱れ**が大きいため、風速が変わりやすい。</li>
+                <li data-question="q32" data-answer="B. 夜間は地球の自転速度が速くなるため、風が強くなる。</li>
+                <li data-question="q32" data-answer="C. 飛行禁止空域が昼夜で異なるため。</li>
+            </ul>
+            <div class="answer-content" id="answer-q32">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】日中は**太陽光**による加熱で**大気の対流**が活発になり、風の乱れや突風が発生しやすくなります。</p>
+                    <p class="hint">【ヒント】日中は風が強い傾向があります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q33">
+            <h2>Q.33. **夜間飛行**を行う際の、操縦者の注意点として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q33" data-answer="A">A. 機体の灯火と**周囲の明暗**に慣れるために、**暗順応**の時間を確保する。</li>
+                <li data-question="q33" data-answer="B">B. 夜間は機体のスピードを上げて、短時間で飛行を終える。</li>
+                <li data-question="q33" data-answer="C. 操縦に慣れるため、事前に昼間に同じ場所で目隠しをして訓練する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q33">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】人間の目は、暗い環境に順応するのに時間がかかります。**暗順応**が不十分だと、視認性が低下し、事故につながる危険性があります。</p>
+                    <p class="hint">【ヒント】人間の視覚特性を考慮する必要があります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q34">
+            <h2>Q.34. **目視外飛行**時の**補助者**が負うべき最も重要な役割と責任として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q34" data-answer="A">A. 操縦者に代わって**機体の位置と周囲の安全**を常に監視し、緊急時には指示を出す。</li>
+                <li data-question="q34" data-answer="B">B. 補助者は、操縦者が飛行を終えるまで何もしてはならない。</li>
+                <li data-question="q34" data-answer="C. 補助者は、機体のメンテナンス記録を作成する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q34">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】補助者は、操縦者が目視できない状況を補完し、**第三者の安全**を確保するための**安全監視員**としての重要な責任を負います。</p>
+                    <p class="hint">【ヒント】補助者は「第2の目」です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q35">
+            <h2>Q.35. 飛行中に緊急事態が発生し、**第三者の安全**が脅かされる場合の、操縦者の**最優先事項**として正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q35" data-answer="A">A. **機体を安全な場所へ直ちに墜落**させ、第三者への被害を最小限に抑える。</li>
+                <li data-question="q35" data-answer="B">B. 機体の修理費用を考慮し、可能な限り回収を試みる。</li>
+                <li data-question="q35" data-answer="C. 墜落するまで、その場でホバリングを継続する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q35">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】緊急時の対応は**人命第一**です。第三者への危害が避けられないと判断した場合は、被害の少ない場所に機体を落とす（緊急着陸させる）ことが最優先となります。</p>
+                    <p class="hint">【ヒント】人命より機体を優先してはなりません。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q36">
+            <h2>Q.36. 飛行前の**機体点検**で、特に確認すべき構造上の重要箇所として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q36" data-answer="A">A. **アームのヒンジ部、プロペラの取り付け部、フレームのひび割れ**など、強度に関わる箇所。</li>
+                <li data-question="q36" data-answer="B">B. 機体に貼られているステッカーの色。</li>
+                <li data-question="q36" data-answer="C. 飛行エリアの過去の天候記録。</li>
+            </ul>
+            <div class="answer-content" id="answer-q36">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飛行中の**機体分解・破損**を防ぐため、**プロペラ、モーター、アーム、着陸装置**など、機体の強度や飛行に直結する箇所を点検します。</p>
+                    <p class="hint">【ヒント】特にプロペラの固定は重要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q37">
+            <h2>Q.37. **フェールセーフ機能**が作動する条件の一般的な例として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q37" data-answer="A">A. **操縦装置との通信途絶**や**バッテリー残量の極端な低下**。</li>
+                <li data-question="q37" data-answer="B">B. 飛行時間が20分を超過したとき。</li>
+                <li data-question="q37" data-answer="C. 操縦者がプロポの電源を入れたとき。</li>
+            </ul>
+            <div class="answer-content" id="answer-q37">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】フェールセーフは、**異常事態**（ロストリンクや低バッテリーなど）が発生した際に、**自動帰還（RTH）**や**自動着陸**など、事前に設定された安全な動作を実行する機能です。</p>
+                    <p class="hint">【ヒント】「安全のための機能」です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q38">
+            <h2>Q.38. **高圧送電線**の近くでの飛行の危険性として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q38" data-answer="A">A. 強力な**電磁波**により、機体の**コンパス（磁気センサー）が狂い**、制御不能になる危険性がある。</li>
+                <li data-question="q38" data-answer="B">B. 高圧送電線の近くでは風が常に止む。</li>
+                <li data-question="q38" data-answer="C. 送電線は飛行機の航路として設定されている。</li>
+            </ul>
+            <div class="answer-content" id="answer-q38">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】高圧線から発生する**強い電磁波**は、機体の**磁気コンパス**に干渉し、機体が設定されたコースから大きく外れたり、スピンしたりする原因となります。</p>
+                    <p class="hint">【ヒント】高圧線、変電所、電波塔の近くは特に注意が必要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q39">
+            <h2>Q.39. **飛行日誌**に記載すべき「**点検整備記録**」の例として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q39" data-answer="A">A. **モーターの総運転時間**、**交換した部品**、**オーバーホールの記録**など。</li>
+                <li data-question="q39" data-answer="B">B. 飛行エリア周辺のレストラン情報。</li>
+                <li data-question="q39" data-answer="C. 飛行中の操縦者の感情の変化。</li>
+            </ul>
+            <div class="answer-content" id="answer-q39">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】点検整備記録は、機体の**信頼性**を維持し、部品の**寿命管理**を行うために不可欠な記録です。</p>
+                    <p class="hint">【ヒント】機体の健康診断の記録です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q40">
+            <h2>Q.40. 操縦者の**疲労**が、飛行中の判断に与える影響として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q40" data-answer="A">A. **反応速度の低下**、**状況認識の誤り**、**リスク評価の甘さ**につながる。</li>
+                <li data-question="q40" data-answer="B">B. 疲労すると、かえって集中力が向上する。</li>
+                <li data-question="q40" data-answer="C. 疲労は飛行性能に影響しない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q40">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】**ヒューマンファクター**において、疲労やストレスは**認知能力**を低下させ、重大な**ヒューマンエラー**の原因となります。</p>
+                    <p class="hint">【ヒント】体調管理も操縦者の責任です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q41">
+            <h2>Q.41. **操縦練習**において、まず習得すべき最も基本的な操作として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q41" data-answer="A">A. **安定したホバリング**と**安全な離着陸操作**。</li>
+                <li data-question="q41" data-answer="B">B. 機体を目視せずに飛行させること。</li>
+                <li data-question="q41" data-answer="C. 時速100km以上の高速飛行。</li>
+            </ul>
+            <div class="answer-content" id="answer-q41">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】ホバリングは、機体を**一定の位置・高度**に保つ基本的な操作であり、その後のすべての飛行技術の基礎となります。</p>
+                    <p class="hint">【ヒント】マルチコプターの最も重要な基本操作です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q42">
+            <h2>Q.42. **複数人**（操縦者、補助者など）で飛行を行う際の、最も重要な安全管理として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q42" data-answer="A">A. **役割分担と連絡方法**の事前明確化と**ブリーフィング**。</li>
+                <li data-question="q42" data-answer="B">B. 操縦者と補助者が常に離れて作業すること。</li>
+                <li data-question="q42" data-answer="C. 飛行中にすべての情報を補助者が独断で処理すること。</li>
+            </ul>
+            <div class="answer-content" id="answer-q42">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】チームで飛行を行う際は、各自の役割（監視、通信、操作など）を明確にし、**情報共有**を徹底するための**ブリーフィング（事前打ち合わせ）**が必須です。</p>
+                    <p class="hint">【ヒント】チームワークが安全を生みます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q43">
+            <h2>Q.43. **機体の重量**が重くなるほど、飛行中に増大するリスクとして、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q43" data-answer="A">A. 慣性が大きくなり、**急な姿勢変更や停止が難しくなる**（運動エネルギーの増大）。</li>
+                <li data-question="q43" data-answer="B">B. 機体の重心が自動的に低くなるため、安定性が増す。</li>
+                <li data-question="q43" data-answer="C. 地表風の影響を受けなくなる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q43">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】機体が重いほど**運動エネルギー**が大きくなるため、墜落・衝突時の**破壊力が増大**し、また急操作に対する**反応が鈍く**なります。</p>
+                    <p class="hint">【ヒント】慣性は重さに比例します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q44">
+            <h2>Q.44. 飛行中に機体が**意図しない方向**へ流される場合の対処法として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q44" data-answer="A">A. GNSSが不安定な可能性があるため、速やかに飛行を中止し**安全な場所に着陸**させる。</li>
+                <li data-question="q44" data-answer="B">B. 流されている方向にさらにプロポのスティックを倒す。</li>
+                <li data-question="q44" data-answer="C. 飛行エリアから遠く離れた場所へ飛行させる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q44">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】機体が意図しない挙動を示すのは、**GPSの誤差**、**コンパスの異常**、または**強い突風**の可能性があるため、直ちに飛行を中止し、**原因の特定**を行う必要があります。</p>
+                    <p class="hint">【ヒント】異常時はまず着陸です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q45">
+            <h2>Q.45. **飛行前の現地調査（ロケーションチェック）**を行う主な目的として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q45" data-answer="A">A. 飛行経路周辺の**障害物**、**第三者の立ち入り可能性**、**電波干渉源**などを確認すること。</li>
+                <li data-question="q45" data-answer="B">B. 飛行エリアの土地の所有者を特定すること。</li>
+                <li data-question="q45" data-answer="C. 飛行エリアの過去50年間の歴史を調査すること。</li>
+            </ul>
+            <div class="answer-content" id="answer-q45">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】現地調査は、**地図や航空写真では分からない現場の状況**（一時的な障害物、地形、電波状況など）を確認し、**飛行計画を具体化**するために必須です。</p>
+                    <p class="hint">【ヒント】「百聞は一見に如かず」です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q46">
+            <h2>Q.46. **空港周辺**で飛行する際の、最も重要な事前確認事項として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q46" data-answer="A">A. 飛行計画の承認に加え、**管制機関（または空港管理者）への通報**と調整。</li>
+                <li data-question="q46" data-answer="B. 飛行する機体の色を空港の管制塔に合わせること。</li>
+                <li data-question="q46" data-answer="C. 空港のレストランの営業時間を知ること。</li>
+            </ul>
+            <div class="answer-content" id="answer-q46">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】空港周辺空域は有人航空機の安全に直結するため、国土交通大臣の**許可**だけでなく、**管制機関との連携（通報・調整）**が非常に重要です。</p>
+                    <p class="hint">【ヒント】有人機との情報共有が必須です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q47">
+            <h2>Q.47. **飛行マニュアル**に記載すべき内容で、最も重要なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q47" data-answer="A">A. **日常点検・定期点検の手順**、**緊急時の手順**、**安全確保体制**。</li>
+                <li data-question="q47" data-answer="B. 操縦者の好きな音楽のリスト。</li>
+                <li data-question="q47" data-answer="C. 機体の開発秘話。</li>
+            </ul>
+            <div class="answer-content" id="answer-q47">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飛行マニュアルは、**特定飛行を安全に行うため**の手順を定めたものであり、機体の管理方法や緊急時の対応方法が核となります。</p>
+                    <p class="hint">【ヒント】マニュアルは安全運行のための「虎の巻」です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q48">
+            <h2>Q.48. ドローンを操縦する際に、遵守しなければならない「**無人航空機操縦者の心得**」で、最初に記載されている事項として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q48" data-answer="A">A. 無人航空機の操縦は、**社会に対する責任**を伴う行為であることを自覚する。</li>
+                <li data-question="q48" data-answer="B">B. 常に新しい機体を買い換える。</li>
+                <li data-question="q48" data-answer="C. 飛行中は常に大声で周囲に呼びかける。</li>
+            </ul>
+            <div class="answer-content" id="answer-q48">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】すべての安全運航は、**法令と社会的な規範を遵守する**という**操縦者の自覚と責任**から始まります。</p>
+                    <p class="hint">【ヒント】心得の最も重要な部分です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q49">
+            <h2>Q.49. **夜間**の目視内飛行で、機体を見失うリスクを減らすための工夫として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q49" data-answer="A">A. 機体に**明るく視認性の高い灯火**を設置し、**黒い背景**（夜空など）を避ける。</li>
+                <li data-question="q49" data-answer="B">B. 飛行前に目薬をさす。</li>
+                <li data-question="q49" data-answer="C. 機体の電源をこまめに切る。</li>
+            </ul>
+            <div class="answer-content" id="answer-q49">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】夜間は、灯火の**明るさ**と、灯火が**背景に溶け込まない**こと（黒い夜空を避ける、地上付近を飛ぶなど）が重要です。</p>
+                    <p class="hint">【ヒント】夜間の視認性を最大限に高める工夫が必要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q50">
+            <h2>Q.50. 飛行中に何らかの異常や危険を感じた際の、**飛行中止**を判断する際の最も重要な基準として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q50" data-answer="A">A. **少しでも安全性が確保できない**と判断した場合、迷わず飛行を中止する。</li>
+                <li data-question="q50" data-answer="B">B. 飛行時間があと5分残っているか確認してから中止する。</li>
+                <li data-question="q50" data-answer="C. 異常があっても、予定のミッションを優先する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q50">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】安全運航の基本は**無理をしないこと**です。少しでも危険を感じた場合は、**中止・延期**の判断を下す勇気が最も重要です。</p>
+                    <p class="hint">【ヒント】安全側に倒す判断が求められます。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.options li').forEach(item => {
+            item.addEventListener('click', event => {
+                // クリックされた選択肢から問題IDを取得
+                const questionId = event.target.dataset.question;
+                // 対応する解答・解説ブロックを取得
+                const answerContent = document.getElementById(`answer-${questionId}`);
+
+                // 解答ブロックを表示する
+                if (answerContent) {
+                    answerContent.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
