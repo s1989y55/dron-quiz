@@ -32,14 +32,14 @@
             color: #555;
         }
         .start-button {
-            background-color: #ff9800; /* 目立つオレンジ色 */
+            background-color: #ff9800; /* オレンジ */
             color: white;
             border: none;
             padding: 15px 30px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: bold;
             margin: 4px 2px;
             border-radius: 8px;
@@ -76,16 +76,12 @@
 
     <script>
         function startRandomQuiz() {
-            // 4つのクイズファイル名の配列
-            const quizFiles = ['quiz_1.html', 'quiz_2.html', 'quiz_3.html', 'quiz_4.html'];
-
-            // 0から3までの乱数を生成
-            const randomIndex = Math.floor(Math.random() * quizFiles.length);
-
-            // 選択されたクイズファイルにリダイレクト
-            const randomQuizFile = quizFiles[randomIndex];
-            window.location.href = randomQuizFile;
+            // 1から4までのランダムな整数を生成
+            const quizNumber = Math.floor(Math.random() * 4) + 1;
+            // 対応するファイル名にリダイレクト
+            window.location.href = `quiz_${quizNumber}.html`;
         }
+        // index.html自体に問題コンテンツがない場合は、最初にランダムなクイズにリダイレクトする処理は不要と判断し、削除しました。
     </script>
 </body>
 </html>
