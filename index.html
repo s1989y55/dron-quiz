@@ -32,12 +32,16 @@
             color: #555;
         }
         .start-button {
+            background-color: #ff9800; /* 目立つオレンジ色 */
+            color: white;
+            border: none;
             padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
             font-size: 1.5em;
             font-weight: bold;
-            color: #ffffff;
-            background-color: #e65100; /* オレンジ系 */
-            border: none;
+            margin: 4px 2px;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.1s;
@@ -72,17 +76,15 @@
 
     <script>
         function startRandomQuiz() {
-            // 作成済みの全てのクイズファイル名をリスト化
+            // 4つのクイズファイル名の配列
             const quizFiles = ['quiz_1.html', 'quiz_2.html', 'quiz_3.html', 'quiz_4.html'];
-            
-            // 0から (リストの長さ-1) までの乱数を生成（0, 1, 2, 3のいずれか）
+
+            // 0から3までの乱数を生成
             const randomIndex = Math.floor(Math.random() * quizFiles.length);
-            
-            // リストからランダムにファイルを選択
-            const selectedFile = quizFiles[randomIndex];
-            
-            // 選択されたファイルへブラウザをリダイレクト（ページ遷移）
-            window.location.href = selectedFile;
+
+            // 選択されたクイズファイルにリダイレクト
+            const randomQuizFile = quizFiles[randomIndex];
+            window.location.href = randomQuizFile;
         }
     </script>
 </body>

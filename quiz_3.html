@@ -78,86 +78,83 @@
             font-weight: bold;
         }
         .rationale {
-            margin-top: 10px;
-            font-size: 0.95em;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #ffcc80;
+            font-size: 0.9em;
         }
         .hint {
-            color: #004d40;
-            font-style: italic;
-            font-size: 0.9em;
+            color: #666;
             margin-top: 10px;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <h1>二等無人航空機操縦士 学科試験 模擬問題（パターン3）</h1>
+    <p>クリックで解答が表示されます。再クリックで解答が非表示になります。</p>
 
     <div class="quiz-container">
-
+        
         <div class="question-block" id="q1">
-            <h2>Q.1. 無人航空機の飛行禁止空域に関する記述として、正しいものを選びなさい。</h2>
+            <h2>Q.1. 無人航空機を飛行させる際の、操縦者の**最も基本的な心構え**として、正しいものを選びなさい。</h2>
             <ul class="options">
-                <li data-question="q1" data-answer="A">A. 地表または水面から**150m以上の高さの空域**を飛行する場合、国土交通大臣の許可が必要である。</li>
-                <li data-question="q1" data-answer="B">B. 人口集中地区（DID）であっても、高度100m未満であれば許可は不要である。</li>
-                <li data-question="q1" data-answer="C">C. 空港周辺の空域は、すべて飛行禁止空域に指定されているわけではないが、規制空域に該当する。</li>
+                <li data-question="q1" data-answer="A">A. 無人航空機の操縦は、**社会に対する責任**を伴う行為であることを自覚する。</li>
+                <li data-question="q1" data-answer="B">B. 航空法は厳しすぎるため、可能な限り無視して飛行を試みる。</li>
+                <li data-question="q1" data-answer="C">C. 自分の機体なので、誰の許可も必要なく自由に飛行できる。</li>
             </ul>
             <div class="answer-content" id="answer-q1">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】地表または水面から**150m以上の高さ**の空域は、航空機の航行の安全に関わるため、特定飛行として国土交通大臣の許可が必要です。</p>
-                    <p class="hint">【ヒント】DID、150m以上、空港周辺はすべて特定飛行の規制対象です。</p>
+                    <p>【解説】無人航空機操縦者の心得の最初の項目にあります。**法令遵守**と**公共の安全確保**という社会的な責任を負っていることを自覚することが最も重要です。</p>
+                    <p class="hint">【ヒント】自動車の運転と同様、責任が伴います。</p>
                 </div>
             </div>
         </div>
 
         <div class="question-block" id="q2">
-            <h2>Q.2. 無人航空機を飛行させる際の基本的な遵守事項として、正しいものを選びなさい。</h2>
+            <h2>Q.2. **特定飛行**を行う際に、あらかじめ作成し、遵守することが義務付けられている文書はどれか。</h2>
             <ul class="options">
-                <li data-question="q2" data-answer="A">A. 飛行させる際は、機体を**目視**し、常時監視して飛行させること。</li>
-                <li data-question="q2" data-answer="B">B. 飛行させる機体の重量は10kg以下でなければならない。</li>
-                <li data-question="q2" data-answer="C. 飛行させる前に、必ず気象庁に口頭で飛行の承認を得る必要がある。</li>
+                <li data-question="q2" data-answer="A">A. **飛行マニュアル**またはそれに代わる安全を確保するための措置を明記した書類。</li>
+                <li data-question="q2" data-answer="B">B. 操縦者の家族構成を記した書類。</li>
+                <li data-question="q2" data-answer="C">C. 機体の設計図面。</li>
             </ul>
             <div class="answer-content" id="answer-q2">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】無人航空機を飛行させる者は、原則として、機体の位置や状態を**目視**（肉眼）により確認し、安全に飛行させなければなりません（目視外飛行には別途許可が必要です）。</p>
-                    <p class="hint">【ヒント】目視内飛行が原則です。</p>
+                    <p>【解説】特定飛行の許可・承認申請を行う際、自ら安全を確保するための手順や体制を定めた**飛行マニュアル**を作成し、飛行中はこれを遵守することが義務付けられています。</p>
+                    <p class="hint">【ヒント】特定飛行には、マニュアルの作成と遵守が必須です。</p>
                 </div>
             </div>
         </div>
 
         <div class="question-block" id="q3">
-            <h2>Q.3. 飛行日誌に記載すべき事項として、**必須ではない**ものを選びなさい。</h2>
+            <h2>Q.3. 飛行中に**機体の故障**や**不具合**が発生した場合の操縦者の対応として、最も優先すべきものを選びなさい。</h2>
             <ul class="options">
-                <li data-question="q3" data-answer="A">A. **操縦者が過去に取得した自動車運転免許の履歴**。</li>
-                <li data-question="q3" data-answer="B">B. 飛行した日時、場所、飛行時間。</li>
-                <li data-question="q3" data-answer="C. 機体の点検、整備、修理の記録。</li>
+                <li data-question="q3" data-answer="A">A. 直ちに安全な場所に**緊急着陸**させること。</li>
+                <li data-question="q3" data-answer="B">B. 飛行を継続し、ミッションの達成を優先すること。</li>
+                <li data-question="q3" data-answer="C">C. 操縦に自信があれば、そのまま遠くまで飛行させること。</li>
             </ul>
             <div class="answer-content" id="answer-q3">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】飛行日誌には、**安全な飛行の実施と機体の管理**に関する記録（日時、場所、機体情報、点検記録、事故・インシデントなど）を記載する必要があります。自動車免許の履歴は飛行の安全性に直接関係しないため必須ではありません。</p>
-                    <p class="hint">【ヒント】日誌は、機体の信頼性と運航の安全を証明するものです。</p>
+                    <p>【解説】機体の不具合は、制御不能や墜落に直結する危険な事態です。安全を最優先し、**直ちに飛行を中止し、安全な場所に着陸**させることが基本です。</p>
+                    <p class="hint">【ヒント】安全の確保が第一です。</p>
                 </div>
             </div>
         </div>
 
         <div class="question-block" id="q4">
-            <h2>Q.4. 無人航空機操縦士技能証明（二等）を取得するメリットとして、最も適切なものを選びなさい。</h2>
+            <h2>Q.4. **無人航空機登録制度**に関する記述として、正しいものを選びなさい。</h2>
             <ul class="options">
-                <li data-question="q4" data-answer="A">A. 特定飛行のうち、**カテゴリーⅡ飛行**（第三者の立入管理措置を講じる特定飛行）において、**一部の許可・承認手続きが簡略化される**（無人航空機を特定した申請が不要になる）。</li>
-                <li data-question="q4" data-answer="B">B. 飛行禁止空域（DID、空港周辺など）での飛行がすべて許可なしで可能になる。</li>
-                <li data-question="q4" data-answer="C. 機体認証を必ず取得しなければならない。</li>
+                <li data-question="q4" data-answer="A">A. 登録された無人航空機には、**登録記号**を機体に表示する義務がある。</li>
+                <li data-question="q4" data-answer="B">B. 質量100g以上のすべての機体は、登録が**任意**である。</li>
+                <li data-question="q4" data-answer="C">C. 登録記号の表示は、飛行時に取り外しても構わない。</li>
             </ul>
             <div class="answer-content" id="answer-q4">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】技能証明を取得すると、カテゴリーⅡ飛行における**飛行許可・承認申請**の手続きが、機体の安全性を証明する添付書類の提出を省略できるなど、大幅に**簡略化**されます。</p>
-                    <p class="hint">【ヒント】許可・承認申請の手間が減るのが最大のメリットです。</p>
+                    <p>【解説】質量100g以上の無人航空機は、飛行に際して**登録が必須**（義務）であり、登録後に発行される**登録記号**を機体（見やすい位置）に表示しなければなりません。</p>
+                    <p class="hint">【ヒント】自動車のナンバープレートのようなものです。</p>
                 </div>
             </div>
         </div>
@@ -165,57 +162,57 @@
         <div class="question-block" id="q5">
             <h2>Q.5. 事故が発生し、**第三者に重傷を負わせた**場合、操縦者が国土交通大臣に報告しなければならない期限として、正しいものを選びなさい。</h2>
             <ul class="options">
-                <li data-question="q5" data-answer="A">A. 事故発生を知ったときから**10日以内**に報告しなければならない。</li>
-                <li data-question="q5" data-answer="B">B. 事故発生の翌日まで。</li>
-                <li data-question="q5" data-answer="C. 報告の義務はない。</li>
+                <li data-question="q5" data-answer="A">A. 事故発生を知った時から**24時間以内**。</li>
+                <li data-question="q5" data-answer="B">B. 事故発生から7日以内。</li>
+                <li data-question="q5" data-answer="C">C. 報告の必要はない。</li>
             </ul>
             <div class="answer-content" id="answer-q5">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】無人航空機の事故（第三者の死亡・重傷、物件の重大な損壊、機体の大破など）が発生した場合、**10日以内**に国土交通大臣へ報告する必要があります。</p>
-                    <p class="hint">【ヒント】人身事故など、重大な事故の報告期限は「10日」です。</p>
+                    <p>【解説】無人航空機の事故（第三者の人命に関わるもの、物件の破損、機体の紛失・破損など）が発生した場合、操縦者はその事実を知った時から**24時間以内**に国土交通大臣へ速報しなければなりません。</p>
+                    <p class="hint">【ヒント】重大な事故は迅速な報告が必要です。</p>
                 </div>
             </div>
         </div>
 
         <div class="question-block" id="q6">
-            <h2>Q.6. **緊急用務空域**が指定された場合、その空域内を飛行中の無人航空機操縦者に義務付けられる措置として、正しいものを選びなさい。</h2>
+            <h2>Q.6. **強風警報**が出ている場合の、操縦者の適切な対応として、正しいものを選びなさい。</h2>
             <ul class="options">
-                <li data-question="q6" data-answer="A">A. 直ちに飛行を中止し、**速やかに安全な場所に降下・着陸**させること。</li>
-                <li data-question="q6" data-answer="B">B. 高度を上げて、人命救助活動中の航空機から離れること。</li>
-                <li data-question="q6" data-answer="C. 飛行を継続し、緊急活動を撮影すること。</li>
+                <li data-question="q6" data-answer="A">A. 強風による制御不能のリスクが高いため、**直ちに飛行を中止・延期**する。</li>
+                <li data-question="q6" data-answer="B">B. 強風でも飛行を継続できる高性能な機体であることを証明するため、あえて飛行する。</li>
+                <li data-question="q6" data-answer="C">C. 風上に向かって最大速度で飛行を継続する。</li>
             </ul>
             <div class="answer-content" id="answer-q6">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】人命救助や災害対応などの緊急活動が最優先されるため、緊急用務空域が指定された場合、無人航空機は**直ちに飛行を中止し、着陸**させなければなりません。</p>
-                    <p class="hint">【ヒント】緊急活動を妨げる行為は厳に禁じられています。</p>
+                    <p>【解説】強風警報が出ている状況は、機体の耐風性能に関わらず、**安全性が確保できない**と判断すべき危険な状況です。**無理をしない**ことが安全運航の鉄則です。</p>
+                    <p class="hint">【ヒント】安全側に倒す判断が求められます。</p>
                 </div>
             </div>
         </div>
 
         <div class="question-block" id="q7">
-            <h2>Q.7. **飲酒**をした状態での無人航空機の操縦に関する記述として、正しいものを選びなさい。</h2>
+            <h2>Q.7. **ダウンバースト**が飛行に与える影響に関する記述として、正しいものを選びなさい。</h2>
             <ul class="options">
-                <li data-question="q7" data-answer="A">A. アルコールの影響により**正常な飛行ができないおそれがある状態**での飛行は**禁止**されている。</li>
-                <li data-question="q7" data-answer="B">B. 飲酒後1時間以内であれば飛行しても問題ない。</li>
-                <li data-question="q7" data-answer="C. 補助者がいれば、飲酒後の操縦も許可される。</li>
+                <li data-question="q7" data-answer="A">A. 積乱雲の下で発生する**強い下降気流**であり、機体を地面に叩きつけ、墜落させる危険がある。</li>
+                <li data-question="q7" data-answer="B">B. 地上から上空に向かう強い上昇気流であり、機体を予期せぬ高度に持ち上げる。</li>
+                <li data-question="q7" data-answer="C">C. 昼間、強い日射により発生する温かい空気の流れであり、機体性能に影響はない。</li>
             </ul>
             <div class="answer-content" id="answer-q7">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】**酒酔い**または**酒気帯び**の状態での無人航空機の操縦は、航空法により**厳しく禁止**されており、罰則の対象となります。</p>
-                    <p class="hint">【ヒント】自動車の運転と同様に厳しく規制されています。</p>
+                    <p>【解説】ダウンバーストは積乱雲の下で発生する、地面に叩きつけられるような強い**「下降気流」**です。機体を地面に押し付け、墜落させる危険がある現象です。</p>
+                    <p class="hint">【ヒント】「ダウン（下へ）」という名前が示すように、空から地面に向かう風です。</p>
                 </div>
             </div>
         </div>
 
         <div class="question-block" id="q8">
-            <h2>Q.8. 無人航空機操縦士技能証明の**有効期間**として、正しいものを選びなさい。</h2>
+            <h2>Q.8. 無人航空機操縦士の**技能証明**の有効期間として、正しいものを選びなさい。</h2>
             <ul class="options">
-                <li data-question="q8" data-answer="A">A. 技能証明の有効期間は、交付の日から**3年間**である。</li>
-                <li data-question="q8" data-answer="B">B. 技能証明に有効期間はない。</li>
-                <li data-question="q8" data-answer="C. 技能証明の有効期間は5年間である。</li>
+                <li data-question="q8" data-answer="A">A. 3年間</li>
+                <li data-question="q8" data-answer="B">B. 1年間</li>
+                <li data-question="q8" data-answer="C">C. 10年間</li>
             </ul>
             <div class="answer-content" id="answer-q8">
                 <p><span class="correct-answer">【正解】A</span></p>
@@ -231,19 +228,691 @@
             <ul class="options">
                 <li data-question="q9" data-answer="A">A. 機体とバッテリーの合計質量が**100g以上**の飛行機、回転翼航空機、滑空機、飛行船。</li>
                 <li data-question="q9" data-answer="B">B. 機体の種類に関わらず、すべての遠隔操作または自動操縦の機体。</li>
-                <li data-question="q9" data-answer="C. 質量が100g未満の機体であっても、カメラを搭載しているもの。</li>
+                <li data-question="q9" data-answer="C">C. 質量が100g未満の機体であっても、カメラを搭載しているもの。</li>
             </ul>
             <div class="answer-content" id="answer-q9">
                 <p><span class="correct-answer">【正解】A</span></p>
                 <div class="rationale">
-                    <p>【解説】航空法における「無人航空機」とは、**100g以上**の機体（マルチコプター、固定翼など）を指します。100g未満の機体は「模型航空機」として扱われます。</p>
-                    <p class="hint">【ヒント】100gの線引きが重要です。</p>
+                    <p>【解説】航空法における「無人航空機」は、「飛行機、回転翼航空機、滑空機、飛行船」のうち、構造上人が乗れないもので、**機体とバッテリーの合計質量が100g以上**のものを指します。</p>
+                    <p class="hint">【ヒント】100gが法律上の大きな区切りです。</p>
                 </div>
             </div>
         </div>
 
         <div class="question-block" id="q10">
-            <h2>Q.10. 許可・承認が必要な特定飛行である「**危険物の輸送**」の例として、正しいものを選びなさい。</h2>
+            <h2>Q.10. **LiPoバッテリー**の取り扱いに関する記述として、**最も危険な行為**を選びなさい。</h2>
             <ul class="options">
-                <li data-question="q10" data-answer="A">A. 機体に**灯油やガソリン**などの引火性液体を搭載して運搬する行為。</li>
-                <li data-question="
+                <li data-question="q10" data-answer="A">A. バッテリーが**膨張**しているのに気づかず、そのまま充電・使用を継続する。</li>
+                <li data-question="q10" data-answer="B">B. 充電中は常に監視し、充電完了後はすぐに充電器から外す。</li>
+                <li data-question="q10" data-answer="C">C. バッテリーを保管する際、周囲に可燃物を置かない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q10">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】バッテリーの**膨張**は、内部の異常発熱や発火の前兆です。膨張したバッテリーを使用したり充電したりすることは、**発火・破裂**の危険性が極めて高いため、最も危険な行為です。</p>
+                    <p class="hint">【ヒント】異常のあるバッテリーは絶対に使用してはいけません。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q11">
+            <h2>Q.11. 許可・承認が必要な特定飛行のうち、**夜間飛行**に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q11" data-answer="A">A. 夜間飛行を行う際は、機体の姿勢や向きを判断できる**灯火**を装備する必要がある。</li>
+                <li data-question="q11" data-answer="B">B. 夜間であっても、機体の灯火を確認できれば目視内飛行として扱われる。</li>
+                <li data-question="q11" data-answer="C">C. 夜間飛行は、空港等の周辺の空域でのみ許可が必要となる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q11">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】夜間飛行を行う場合、機体の姿勢や向きを容易に判別できる**灯火の装備**が義務付けられています。</p>
+                    <p class="hint">【ヒント】夜間の機体は目視による確認が特に重要になります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q12">
+            <h2>Q.12. **飛行計画**を通報した後、飛行ルートを**変更**する必要が生じた場合の対応として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q12" data-answer="A">A. 飛行前に変更内容を速やかに**通報（訂正）**すること。</li>
+                <li data-question="q12" data-answer="B">B. 通報は一度行えば変更できないため、元の計画通りに飛行する。</li>
+                <li data-question="q12" data-answer="C">C. 軽微な変更であれば、特に対処の必要はない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q12">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飛行計画の通報は、他の空域利用者に情報を提供する目的もあります。内容に変更が生じた場合は、速やかに**変更内容を通報（訂正）**することが求められます。</p>
+                    <p class="hint">【ヒント】実際の状況に合わせて変更が可能です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q13">
+            <h2>Q.13. 飛行前に確認すべき**地域情報**として、最も重要なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q13" data-answer="A">A. 地元住民や近隣施設（病院、学校など）への**事前の周知や調整**が完了しているか。</li>
+                <li data-question="q13" data-answer="B">B. 飛行エリアの過去の歴史について。</li>
+                <li data-question="q13" data-answer="C">C. 飛行エリアの土地の固定資産税評価額。</li>
+            </ul>
+            <div class="answer-content" id="answer-q13">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】無人航空機の飛行は、騒音やプライバシー侵害、墜落による危険など、周辺住民に不安を与える可能性があります。**事前の周知や調整**は、操縦者の**社会に対する責任**の履行として非常に重要です。</p>
+                    <p class="hint">【ヒント】トラブルを未然に防ぐための地域への配慮です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q14">
+            <h2>Q.14. **LiPoバッテリー**を**長期保管**する際の正しい電圧管理に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q14" data-answer="A">A. バッテリーの劣化を防ぐため、**ストレージ電圧（3.7V～3.85V程度）**まで放電してから保管する。</li>
+                <li data-question="q14" data-answer="B">B. 常に満充電（100%）の状態で保管する。</li>
+                <li data-question="q14" data-answer="C">C. 安全のため、完全に放電（0V）してから保管する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q14">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】LiPoバッテリーは、満充電や過放電（完全放電）状態で保管すると、性能が劣化したり、膨張・発火の危険性が高まります。長期保管の際は、専用充電器の**ストレージ（保管）モード**などで、適切な電圧まで放電してから保管することが推奨されています。</p>
+                    <p class="hint">【ヒント】保管に適した電圧があります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q15">
+            <h2>Q.15. マルチコプターの**上昇・下降**制御に使用される原理として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q15" data-answer="A">A. すべてのモーターの回転速度を**同時に増減**させることで、機体全体に働く揚力を調整する。</li>
+                <li data-question="q15" data-answer="B">B. 左右のモーターの回転速度に差をつける。</li>
+                <li data-question="q15" data-answer="C">C. 前後のモーターの回転速度に差をつける。</li>
+            </ul>
+            <div class="answer-content" id="answer-q15">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】機体を水平に保ったまま上昇または下降するには、姿勢制御に必要なバランスを保ちつつ、**すべてのモーターの回転速度を同時に**上げ下げし、機体全体で得られる**揚力**を増減させます。</p>
+                    <p class="hint">【ヒント】揚力が重力より大きくなれば上昇、小さくなれば下降します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q16">
+            <h2>Q.16. **強風**の中での飛行における、操縦者の心得として、最も適切ではないものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q16" data-answer="A">A. 強風警報が出ている場合でも、風速が機体の耐風性能以下であれば飛行を試みる。</li>
+                <li data-question="q16" data-answer="B">B. 予備のバッテリーを多く持参し、飛行時間を短くする。</li>
+                <li data-question="q16" data-answer="C">C. 飛行を中止・延期し、より条件の良い日にあらためて飛行する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q16">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】強風下では、機体の安定性が失われ、墜落のリスクが高まります。**無理をしない**ことが安全運航の鉄則であり、警報が出ている場合は、**飛行を中止・延期**すべきです。「飛行を試みる」としているAは適切ではありません。</p>
+                    <p class="hint">【ヒント】安全の判断は、機体のカタログスペックではなく、**操縦者の判断**が優先されます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q17">
+            <h2>Q.17. **目視外飛行**を行う際に、安全確保措置として**補助者を配置しない場合**の、最も重要な条件として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q17" data-answer="A">A. 飛行経路には、**第三者が存在する可能性が低い場所**（山、海水域、森林など）を設定する。</li>
+                <li data-question="q17" data-answer="B">B. 飛行高度を常に150m以上に保つ。</li>
+                <li data-question="q17" data-answer="C">C. 機体の重さを2kg未満にする。</li>
+            </ul>
+            <div class="answer-content" id="answer-q17">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】補助者を配置しない目視外飛行（レベル3.5）では、**第三者との接触リスク**を極限まで下げるため、**第三者が存在する可能性が低い場所**（立入管理区画の設定が困難な場所）での飛行が必須条件となります。</p>
+                    <p class="hint">【ヒント】第三者リスクの回避が最も重要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q18">
+            <h2>Q.18. 飛行前の**機体の点検**に関する記述として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q18" data-answer="A">A. 機体の各部がしっかりとねじ止めされていることを確認しなくてもよい。</li>
+                <li data-question="q18" data-answer="B">B. プロペラにひび割れや欠けがないか確認する。</li>
+                <li data-question="q18" data-answer="C">C. バッテリー残量と、プロポ（送信機）のバッテリー残量を確認する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q18">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】機体の各部の**ねじやボルトの緩み**は、飛行中の振動で脱落し、墜落の原因となるため、確実に確認しなければなりません。「確認しなくてもよい」としているAは誤りです。</p>
+                    <p class="hint">【ヒント】機体の点検は、安全飛行の基本です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q19">
+            <h2>Q.19. **遠隔地**での飛行計画を立てる際、最も確認が困難であり、現地調査で特に注意すべき情報を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q19" data-answer="A">A. 飛行エリアの**風向きや風速**の変化。</li>
+                <li data-question="q19" data-answer="B">B. 飛行エリアの住所。</li>
+                <li data-question="q19" data-answer="C">C. 飛行させる無人航空機の質量。</li>
+            </ul>
+            <div class="answer-content" id="answer-q19">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飛行エリアの**風向きや風速**、またその変化は、地図や気象情報だけでは正確に把握が難しく、飛行直前の**現地での確認**が必須です。特に地形による局地風などは現地でしかわかりません。</p>
+                    <p class="hint">【ヒント】気象は常に変化し、局地的な影響を受けやすいです。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q20">
+            <h2>Q.20. **LiPoバッテリー**の**充電時**の取り扱いに関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q20" data-answer="A">A. 充電中は**常に監視**し、異常（膨張、発熱、異臭など）がないか注意を払う。</li>
+                <li data-question="q20" data-answer="B">B. 充電中は安全なため、充電が完了するまで放置して構わない。</li>
+                <li data-question="q20" data-answer="C">C. 充電中はバッテリーを冷やすため、冷蔵庫に入れておくべきである。</li>
+            </ul>
+            <div class="answer-content" id="answer-q20">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】LiPoバッテリーは、充電中・放電中ともに**発火の危険性**があるため、**常に周囲を監視**することが必須です。</p>
+                    <p class="hint">【ヒント】充電中はそばを離れないようにしましょう。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q21">
+            <h2>Q.21. **日中（昼間）**の定義として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q21" data-answer="A">A. 国立天文台が発表する**日の出**から**日の入り**までの時間帯。</li>
+                <li data-question="q21" data-answer="B">B. 午前8時から午後5時までの時間帯。</li>
+                <li data-question="q21" data-answer="C">C. 機体の灯火が視認できる時間帯。</li>
+            </ul>
+            <div class="answer-content" id="answer-q21">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】航空法における「日中」は、**日の出から日の入りまで**の時間帯と明確に定義されています。この時間帯以外（夜間）の飛行は、原則として特定飛行となり、承認が必要です。</p>
+                    <p class="hint">【ヒント】夜間飛行の定義の裏返しです。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q22">
+            <h2>Q.22. **高高度（地表から150m以上）**での飛行に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q22" data-answer="A">A. 原則として国土交通大臣の**許可**が必要な**特定空域**である。</li>
+                <li data-question="q22" data-answer="B">B. 飛行させる無人航空機の質量が1kg未満であれば、許可は不要である。</li>
+                <li data-question="q22" data-answer="C">C. 高度が高くなると、地上からの視認性が向上するため、安全性が増す。</li>
+            </ul>
+            <div class="answer-content" id="answer-q22">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】地表または水面から**150m以上の高さの空域**は、航空法上の**特定空域**に該当し、原則として飛行が禁止されています。飛行させるには事前に国土交通大臣の**許可**が必要です。</p>
+                    <p class="hint">【ヒント】他の航空機とのニアミスを防ぐための規定です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q23">
+            <h2>Q.23. **ロール（Roll）**軸（機体の左右の傾き）制御に使用される原理として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q23" data-answer="A">A. 左右のモーター群の回転速度に**差**をつけることで、左右の揚力差を発生させる。</li>
+                <li data-question="q23" data-answer="B">B. 機首を上げ下げする（ピッチ）ことで、機体を左右に傾ける。</li>
+                <li data-question="q23" data-answer="C">C. 機体尾部に付いた尾翼を操作する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q23">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】**ロール**は、左右のプロペラの回転速度を変えることで、揚力に差（左右の傾き）を生じさせ、機体を左右に移動させる（バンクさせる）制御です。</p>
+                    <p class="hint">【ヒント】左右のどちらか一方の揚力を増減させます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q24">
+            <h2>Q.24. **飛行記録**（フライトログ）に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q24" data-answer="A">A. 飛行記録は、機体の整備・点検や事故原因の究明のために**作成・保存**が推奨されている。</li>
+                <li data-question="q24" data-answer="B">B. 飛行記録の保存は、法律で一切義務付けられていない。</li>
+                <li data-question="q24" data-answer="C">C. 飛行記録は、飛行時間のみを記録すれば十分である。</li>
+            </ul>
+            <div class="answer-content" id="answer-q24">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】飛行記録は、機体の**整備管理**や**事故発生時の原因究明**に不可欠であり、作成と保存が強く推奨されています。特に業務で飛行させる場合は、実質的に必須となります。</p>
+                    <p class="hint">【ヒント】機体の履歴を残すことは、安全運航に不可欠です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q25">
+            <h2>Q.25. **風速**が機体に与える影響に関する記述として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q25" data-answer="A">A. 高度が高くなると、地表付近と比べて風速が弱くなる傾向がある。</li>
+                <li data-question="q25" data-answer="B">B. 向かい風が強すぎると、機体が前進できず、バッテリー消費が増加する。</li>
+                <li data-question="q25" data-answer="C">C. 地表近くでは、樹木や建物などの影響で**乱気流**が発生し、機体が不安定になりやすい。</li>
+            </ul>
+            <div class="answer-content" id="answer-q25">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】一般的に、地上に比べて**高度が高くなるほど風速は強く**なる傾向があります。「弱くなる」としているAは誤りです。</p>
+                    <p class="hint">【ヒント】高層ビルや山の上では風が強いことを想像してください。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q26">
+            <h2>Q.26. 飛行中に**突発的な雨**に遭遇した場合の対応として、最も適切ではないものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q26" data-answer="A">A. センサーや電子機器の故障を防ぐため、可能な限り高い高度に上昇する。</li>
+                <li data-question="q26" data-answer="B">B. 直ちに飛行を中止し、速やかに安全な場所に着陸させる。</li>
+                <li data-question="q26" data-answer="C">C. 機体の視認性が低下するため、目視外飛行に移行しないよう注意する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q26">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】雨は視界の低下や機体の防水性能を超える危険性があります。高度を上げると風が強くなる可能性もあり、安全性の確保にはつながりません。**直ちに飛行を中止し、着陸**させることが最も適切です。</p>
+                    <p class="hint">【ヒント】悪天候時は「中止・延期」が原則です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q27">
+            <h2>Q.27. **霧**が飛行に与える影響で、最も危険性の高いものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q27" data-answer="A">A. **視程（見通し）**が大幅に低下し、**目視内飛行の維持**が困難になる。</li>
+                <li data-question="q27" data-answer="B">B. 霧が機体の重量を大幅に増加させる。</li>
+                <li data-question="q27" data-answer="C">C. 霧は無人航空機の登録記号を消してしまう。</li>
+            </ul>
+            <div class="answer-content" id="answer-q27">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】霧は視程（見通し）を低下させるため、**目視内飛行の維持が困難になる恐れがあり**、原則として飛行を中止・延期すべきです。</p>
+                    <p class="hint">【ヒント】パイロットにとって「視程」の確保は最も重要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q28">
+            <h2>Q.28. **緊急用務空域**が設定された場合の、無人航空機操縦者の義務として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q28" data-answer="A">A. 直ちに飛行を中止し、速やかに安全な場所に**着陸**させること。</li>
+                <li data-question="q28" data-answer="B">B. 事前に許可を得ていれば、そのまま飛行を継続できる。</li>
+                <li data-question="q28" data-answer="C">C. 他の航空機の航行を妨げないよう、高度150m以上へ上昇して待機すること。</li>
+            </ul>
+            <div class="answer-content" id="answer-q28">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】緊急用務空域では、人命救助などの緊急活動が最優先されるため、**すべての無人航空機は直ちに着陸**しなければなりません。</p>
+                    <p class="hint">【ヒント】人命に関わる活動を妨げてはなりません。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q29">
+            <h2>Q.29. 飛行中に**予期せぬ第三者**が飛行エリアに立ち入ってきた場合の対応として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q29" data-answer="A">A. 直ちに飛行を中止し、安全な場所に着陸させる。</li>
+                <li data-question="q29" data-answer="B">B. 第三者に気づかれないよう、機体を急上昇させる。</li>
+                <li data-question="q29" data-answer="C">C. 第三者の上空を通過し、ミッションを継続する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q29">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】第三者との接触事故を防ぐため、第三者が飛行エリアに進入した場合は、**直ちに飛行を中止し、着陸**させることが義務付けられています。</p>
+                    <p class="hint">【ヒント】第三者に対する安全確保が最優先です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q30">
+            <h2>Q.30. **飲酒後**の無人航空機の操縦に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q30" data-answer="A">A. アルコールの影響により**正常な飛行ができないおそれ**がある状態での飛行は**禁止**されている。</li>
+                <li data-question="q30" data-answer="B">B. 飛行高度が30m未満であれば、飲酒後の飛行も可能である。</li>
+                <li data-question="q30" data-answer="C">C. 飲酒から8時間経過していれば、アルコールの影響は完全に抜けていると見なされる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q30">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】航空法では、飲酒や薬物などの影響により**正常な飛行ができないおそれがある間**は、いかなる理由であっても飛行させてはならないと定められています。</p>
+                    <p class="hint">【ヒント】自動車の運転と同様に厳しく制限されています。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q31">
+            <h2>Q.31. **ピッチ（Pitch）**軸（機体の前後の傾き）制御に使用される原理として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q31" data-answer="A">A. 前後のモーターの回転速度に**差**をつけることで、前後の揚力差を発生させる。</li>
+                <li data-question="q31" data-answer="B">B. 左右のモーターの回転速度に差をつける。</li>
+                <li data-question="q31" data-answer="C">C. すべてのモーターの回転速度を同時に増減させる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q31">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】**ピッチ**は、前後のプロペラの回転速度を変えることで、揚力に差（前後の傾き）を生じさせ、機体を前進・後退させる制御です。</p>
+                    <p class="hint">【ヒント】前後のどちらか一方の揚力を増減させます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q32">
+            <h2>Q.32. **ボルテックス・リング・ステート（VRS）**が発生しやすい飛行状況として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q32" data-answer="A">A. ほとんど水平移動せず、自身のダウンウォッシュに巻き込まれるような**急降下**をしている時。</li>
+                <li data-question="q32" data-answer="B">B. 高速で前進し、緩やかな降下を行っている時。</li>
+                <li data-question="q32" data-answer="C">C. 強い向かい風の中、急激に上昇している時。</li>
+            </ul>
+            <div class="answer-content" id="answer-q32">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】ボルテックス・リング・ステートは、降下中に自身のダウンウォッシュ（下方への風）に巻き込まれてローターの効率が極度に悪化し、制御不能に陥る危険な現象です。特に**急な垂直降下時**に発生しやすいです。</p>
+                    <p class="hint">【ヒント】自分の出した風（渦）の中に落ちていくことで、揚力を失う現象です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q33">
+            <h2>Q.33. **有人航空機**との遭遇時に関する記述として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q33" data-answer="A">A. 有人航空機の方が優先権を持つため、無人航空機は直ちに飛行を継続しなければならない。</li>
+                <li data-question="q33" data-answer="B">B. 有人航空機の安全を確保するため、無人航空機は常に有人航空機との衝突を回避する義務がある。</li>
+                <li data-question="q33" data-answer="C">C. ドクターヘリなどの緊急用務機が接近してきた場合、直ちに飛行を中止し着陸させる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q33">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】有人航空機が優先権を持つため、無人航空機は直ちに**飛行を中止**し、有人航空機の安全を確保するための措置（着陸など）を取る必要があります。「飛行を継続しなければならない」としているAは誤りです。</p>
+                    <p class="hint">【ヒント】有人機との衝突回避が最優先です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q34">
+            <h2>Q.34. **LiPoバッテリー**の取り扱いに関する記述として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q34" data-answer="A">A. バッテリーが膨張した場合でも、飛行中に問題がなければそのまま使用を継続する。</li>
+                <li data-question="q34" data-answer="B">B. 強い衝撃を与えないように取り扱う。</li>
+                <li data-question="q34" data-answer="C">C. 充電中は可燃物の近くに置かない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q34">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】バッテリーの**膨張**は、内部でガスが発生している危険な状態であり、発火・破裂のサインです。膨張したバッテリーは**絶対に使用してはいけません**。</p>
+                    <p class="hint">【ヒント】膨張したバッテリーは即座に廃棄します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q35">
+            <h2>Q.35. **日中（昼間）**の定義および夜間飛行に関する記述として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q35" data-answer="A">A. 夜間飛行を行う際は、機体の向きや姿勢を判断できる灯火を装備しなくてもよい。</li>
+                <li data-question="q35" data-answer="B">B. 日中は、国立天文台が発表する日の出から日の入りまでの時間を指す。</li>
+                <li data-question="q35" data-answer="C">C. 薄暮時（日の入り直後）は夜間に含まれるため、特定飛行として夜間飛行の承認が必要となる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q35">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】夜間飛行を行う場合、機体の向きや姿勢を容易に判別できる**灯火の装備**が義務付けられています。Aは「装備しなくてもよい」としているため誤りです。</p>
+                    <p class="hint">【ヒント】夜間の機体は目視による確認が特に重要になります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q36">
+            <h2>Q.36. 飛行計画を立てる際、**現地調査**を行う目的として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q36" data-answer="A">A. 飛行エリアの地権者や関係者への挨拶を省略するため。</li>
+                <li data-question="q36" data-answer="B">B. 飛行ルート上の障害物や危険箇所（電線、樹木など）を確認するため。</li>
+                <li data-question="q36" data-answer="C">C. 離着陸に適した場所や緊急着陸場所を確保するため。</li>
+            </ul>
+            <div class="answer-content" id="answer-q36">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】現地調査では、関係者への挨拶や調整は**必須**の行為です。「省略するため」としているAは誤りです。</p>
+                    <p class="hint">【ヒント】現地調査は、机上計画だけでは分からない真のリスクを確認するために行います。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q37">
+            <h2>Q.37. **強風**の中での飛行に関する記述として、最も危険性の高いものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q37" data-answer="A">A. 機体の耐風性能を超える風速下で飛行を継続することで、**制御不能**や**墜落**のリスクが高まる。</li>
+                <li data-question="q37" data-answer="B">B. 強風下では、機体の揚力が増加し、バッテリー効率が向上する。</li>
+                <li data-question="q37" data-answer="C">C. 風速は機体の姿勢制御に影響を与えない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q37">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】強風は機体の姿勢を乱し、モーターに過度な負荷をかけ、制御を困難にします。耐風性能を超える飛行は、直ちに墜落の危険につながります。</p>
+                    <p class="hint">【ヒント】風が強い日は「無理をしない」が鉄則です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q38">
+            <h2>Q.38. **補助者**を配置する際の、操縦者の役割に関する記述として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q38" data-answer="A">A. 補助者にすべての安全確認を任せ、操縦者はモニター操作に専念する。</li>
+                <li data-question="q38" data-answer="B">B. 操縦者と補助者で、飛行状況と周囲の安全確認を分担し、**常時連絡**を取れるようにする。</li>
+                <li data-question="q38" data-answer="C">C. 補助者は、操縦者に必要な助言（「右から車が来ています」など）を行う。</li>
+            </ul>
+            <div class="answer-content" id="answer-q38">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】安全に対する最終的な責任は**操縦者本人**にあります。補助者がいても、操縦者自身も周囲の状況を把握し、安全確認を行う必要があります。「すべての安全確認を任せ」ることはできません。</p>
+                    <p class="hint">【ヒント】操縦者は「最終責任者」です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q39">
+            <h2>Q.39. **LiPoバッテリー**の**保管温度**に関する記述として、最も適切なものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q39" data-answer="A">A. 高温多湿を避け、**涼しく乾燥した場所**で保管する。</li>
+                <li data-question="q39" data-answer="B">B. バッテリーを暖めるため、直射日光の当たる場所で保管する。</li>
+                <li data-question="q39" data-answer="C">C. 寒冷な環境で保管するほうが、バッテリーの寿命が延びる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q39">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】LiPoバッテリーは**熱に非常に弱い**ため、高温は劣化や膨張・発火の危険性を高めます。涼しい場所での保管が基本です。</p>
+                    <p class="hint">【ヒント】高温・多湿はバッテリーの天敵です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q40">
+            <h2>Q.40. **気温と空気密度**に関する記述として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q40" data-answer="A">A. 気温が高い環境下では空気密度が下がり、プロペラが空気を掴む力が弱くなるため、離陸性能が低下する。</li>
+                <li data-question="q40" data-answer="B">B. 気温が高いほど空気密度は高くなり、機体はより大きな揚力を得られる。</li>
+                <li data-question="q40" data-answer="C">C. 気温は空気密度に影響を与えない。</li>
+            </ul>
+            <div class="answer-content" id="answer-q40">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】一般的に、**気温が高い**と空気は膨張し、**空気密度が下がります**。これによりプロペラが生み出す揚力や推力が低下し、離陸性能や飛行時間が短くなります。</p>
+                    <p class="hint">【ヒント】暑い夏の日には、飛行性能が落ちると覚えておきましょう。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q41">
+            <h2>Q.41. **ロストリンク（電波途絶）**が発生した場合、機体が取るべき動作として、最も安全性の高いものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q41" data-answer="A">A. 事前に設定された**自動帰還（RTH）**ポイントに戻るか、その場で自動着陸する。</li>
+                <li data-question="q41" data-answer="B">B. 自動的に飛行高度を上げ、電波を探しながら飛行を継続する。</li>
+                <li data-question="q41" data-answer="C">C. 電波が回復するまで、その場に留まり続ける。</li>
+            </ul>
+            <div class="answer-content" id="answer-q41">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】ロストリンク時、機体は**フェールセーフ機能**により、事前に設定された安全な動作（RTHや自動着陸）を行うことで、事故を未然に防ぎます。これが最も安全性の高い動作です。</p>
+                    <p class="hint">【ヒント】RTH（Return To Home）機能です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q42">
+            <h2>Q.42. **DID（人口集中地区）**の上空で飛行させる際に、必要となる手続きとして、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q42" data-answer="A">A. 国土交通大臣の**許可**を得ること。</li>
+                <li data-question="q42" data-answer="B">B. 警察署長に口頭で届け出ること。</li>
+                <li data-question="q42" data-answer="C">C. 飛行させる無人航空機の質量が1kg未満であれば、手続きは不要である。</li>
+            </ul>
+            <div class="answer-content" id="answer-q42">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】DID上空は**特定空域**の一つであり、原則として無人航空機の飛行が禁止されています。飛行させるには、事前に国土交通大臣の**許可**を得る必要があります。</p>
+                    <p class="hint">【ヒント】DIDは人や建物が集中しているエリアです。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q43">
+            <h2>Q.43. **雷雲（積乱雲）**が接近してきた場合の、操縦者の適切な対応として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q43" data-answer="A">A. 雷の危険性と、雷雲に伴う**乱気流（ダウンバーストなど）**の危険性があるため、直ちに飛行を中止し着陸させる。</li>
+                <li data-question="q43" data-answer="B">B. 雷雲の上昇気流に乗ることで、バッテリー消費を抑える。</li>
+                <li data-question="q43" data-answer="C">C. 機体を覆うビニール袋を装着し、飛行を継続する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q43">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】雷雲は、機体が落雷する危険性、また、**ダウンバースト**などの強い乱気流を発生させるため、非常に危険です。接近が確認された場合は、直ちに飛行を中止しなければなりません。</p>
+                    <p class="hint">【ヒント】積乱雲は「飛行機雲」ならぬ「ドローン雲」です（※比喩です）。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q44">
+            <h2>Q.44. **目視内飛行**の定義に関する記述として、**誤っているもの**を選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q44" data-answer="A">A. 機体の姿勢や動きを**モニター**を通して確認できる飛行。</li>
+                <li data-question="q44" data-answer="B">B. 操縦者が**肉眼**で常時機体を確認できる飛行。</li>
+                <li data-question="q44" data-answer="C">C. 補助者がいる場合、補助者の肉眼での常時監視も含まれる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q44">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】目視内飛行とは、操縦者または補助者が、**肉眼**で常時機体の飛行状況及び周囲の状況を監視できる範囲内で行う飛行を指します。モニター（FPV）を用いた飛行は**目視外飛行**に分類されます。</p>
+                    <p class="hint">【ヒント】モニターは「目視」に含まれません。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q45">
+            <h2>Q.45. **無人航空機登録制度**に登録しなければならない質量（機体とバッテリーの合計）として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q45" data-answer="A">A. 100g以上</li>
+                <li data-question="q45" data-answer="B">B. 200g以上</li>
+                <li data-question="q45" data-answer="C">C. 25kg以上</li>
+            </ul>
+            <div class="answer-content" id="answer-q45">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】2022年6月20日以降、**100g以上**のすべての無人航空機は、飛行に先立って**航空機登録制度**への登録が義務付けられています。</p>
+                    <p class="hint">【ヒント】航空法上の「無人航空機」の定義が100g以上です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q46">
+            <h2>Q.46. **バッテリー残量**に関する記述として、最も安全性の高いものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q46" data-answer="A">A. 飛行を終え、安全に着陸させるために必要な**予備時間**（予備電力）を確保する。</li>
+                <li data-question="q46" data-answer="B">B. バッテリー残量が0%になるまで飛行を継続する。</li>
+                <li data-question="q46" data-answer="C">C. 予備時間は不要であり、残量警告が出たらすぐに帰還を開始する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q46">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】予期せぬ風の変化や緊急事態に備え、飛行を安全に完了し、着陸させるための**予備電力（予備時間）**を常に確保しておくことが安全運航の基本です。</p>
+                    <p class="hint">【ヒント】安全側に余裕を持つことが重要です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q47">
+            <h2>Q.47. 飛行中に何らかの異常や危険を感じた際の、**飛行中止**を判断する際の最も重要な基準として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q47" data-answer="A">A. **少しでも安全性が確保できない**と判断した場合、迷わず飛行を中止する。</li>
+                <li data-question="q47" data-answer="B">B. 飛行時間があと5分残っているか確認してから中止する。</li>
+                <li data-question="q47" data-answer="C">C. 異常があっても、予定のミッションを優先する。</li>
+            </ul>
+            <div class="answer-content" id="answer-q47">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】安全運航の基本は**無理をしないこと**です。少しでも危険を感じた場合は、**中止・延期**の判断を下す勇気が最も重要です。</p>
+                    <p class="hint">【ヒント】安全側に倒す判断が求められます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q48">
+            <h2>Q.48. **DID（人口集中地区）**を調べるために、操縦者が利用すべき公的な情報源として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q48" data-answer="A">A. **地理院地図（国土地理院）**で公開されている情報。</li>
+                <li data-question="q48" data-answer="B">B. 気象庁が発表する週間天気予報。</li>
+                <li data-question="q48" data-answer="C">C. 飛行エリアの観光協会のパンフレット。</li>
+            </ul>
+            <div class="answer-content" id="answer-q48">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】DID（人口集中地区）は、**国土地理院**の**地理院地図**や、**国交省のDIPS**（ドローン情報基盤システム）などで確認することができます。</p>
+                    <p class="hint">【ヒント】正確な地理情報は国土地理院の地図で確認します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q49">
+            <h2>Q.49. **ピッチ（Pitch）**軸（機体の前後の傾き）制御に使用される原理として、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q49" data-answer="A">A. 前後のモーターの回転速度に**差**をつけることで、前後の揚力差を発生させる。</li>
+                <li data-question="q49" data-answer="B">B. 左右のモーターの回転速度に差をつける。</li>
+                <li data-question="q49" data-answer="C">C. すべてのモーターの回転速度を同時に増減させる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q49">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】**ピッチ**は、前後のプロペラの回転速度を変えることで、揚力に差（前後の傾き）を生じさせ、機体を前進・後退させる制御です。</p>
+                    <p class="hint">【ヒント】前後のどちらか一方の揚力を増減させます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block" id="q50">
+            <h2>Q.50. 無人航空機を飛行させる際の、操縦者の最も基本的な心構えとして、正しいものを選びなさい。</h2>
+            <ul class="options">
+                <li data-question="q50" data-answer="A">A. 無人航空機の操縦は、**社会に対する責任**を伴う行為であることを自覚する。</li>
+                <li data-question="q50" data-answer="B">B. 航空法は厳しすぎるため、可能な限り無視して飛行を試みる。</li>
+                <li data-question="q50" data-answer="C">C. 自分の機体なので、誰の許可も必要なく自由に飛行できる。</li>
+            </ul>
+            <div class="answer-content" id="answer-q50">
+                <p><span class="correct-answer">【正解】A</span></p>
+                <div class="rationale">
+                    <p>【解説】無人航空機の操縦者は、**法令遵守**と**公共の安全確保**という社会的な責任を負っており、その自覚をもって飛行に臨むことが基本中の基本です。</p>
+                    <p class="hint">【ヒント】「無人航空機操縦者の心得」の最初の項目です。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.options li').forEach(item => {
+            item.addEventListener('click', event => {
+                // クリックされた選択肢から問題IDを取得 (e.g., 'q1', 'q2', ...)
+                const questionId = event.target.dataset.question;
+                
+                // 対応する解答コンテンツのIDを生成 (e.g., 'answer-q1')
+                const answerElement = document.getElementById(`answer-${questionId}`);
+
+                // 解答の表示/非表示を切り替え
+                if (answerElement) {
+                    // トグル機能を追加: クリックするたびに表示/非表示が切り替わる
+                    answerElement.classList.toggle('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
